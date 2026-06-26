@@ -32,7 +32,7 @@ The environment consists of:
 
 ## Environment Setup
 
-### Step 1 – Login to AWS Sandbox Environment & Verified Terraform.exe download version
+### Step 1 – Verified Terraform.exe download version & Login to AWS Sandbox Environment
 
 Terraform was installed and verified through PowerShell. I also logged into my AWS sandbox
 
