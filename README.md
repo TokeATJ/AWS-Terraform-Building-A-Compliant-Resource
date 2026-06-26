@@ -1,5 +1,8 @@
 # AWS Terraform – Building a Compliant S3 Resource
 
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/e08b0a8a-d8b6-41eb-b9cc-84016a37e2dc" />
+
+
 ## Project Overview
 
 This project demonstrates how to deploy an AWS S3 environment using Terraform while implementing security and compliance controls aligned with NIST 800-53.
