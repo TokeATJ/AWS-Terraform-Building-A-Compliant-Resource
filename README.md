@@ -341,6 +341,15 @@ This output demonstrates that encryption at rest was successfully configured.
 - NIST 800-53
 
 ---
+## Websites referenced: 
+
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_server_side_encryption_configuration 
+
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_public_access_block
+
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_versioning
+
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket_ownership_controls
 
 ## Author
 
