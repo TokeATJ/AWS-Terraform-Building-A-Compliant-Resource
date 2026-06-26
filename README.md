@@ -19,7 +19,6 @@ The objective was to transform a basic S3 deployment into a compliant cloud reso
 
 ## Architecture
 
-![Architecture Diagram](images/architecture.png)
 
 The environment consists of:
 
