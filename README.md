@@ -44,7 +44,7 @@ aws sts get-caller-identity
 
 ![Terraform Installation](images/terraform-install.png)
 
-<img width="1175" height="535" alt="image" src="https://github.com/user-attachments/assets/23b0d22c-75e9-482f-915e-ac1097783b30" />
+<img width="1498" height="682" alt="image" src="https://github.com/user-attachments/assets/5c59faef-58b1-429c-88b1-ac63e5b01ca1" />
 
 <img width="1896" height="510" alt="image" src="https://github.com/user-attachments/assets/64414d8b-5029-47d3-ad68-3fcb1ef73b97" />
 
