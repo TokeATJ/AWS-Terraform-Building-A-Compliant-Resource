@@ -324,11 +324,9 @@ This output demonstrates that encryption at rest was successfully configured.
 Additional evidence is available in:
 
 ```text
-evidence/plan.json
+plan.json
 
-📄 **Evidence File:** [View plan.json](./evidence/plan.json)
 
-The evidence file contains the planned configuration demonstrating:
 
 
 ---
