@@ -32,17 +32,14 @@ The environment consists of:
 
 ## Environment Setup
 
-### Step 1 – Login to AWS Sandbox Environment & Verified Terraform download version
+### Step 1 – Login to AWS Sandbox Environment & Verified Terraform.exe download version
 
 Terraform was installed and verified through PowerShell. I also logged into my AWS sandbox
 
 ```powershell
-winget install Hashicorp.Terraform
 terraform version
 aws sts get-caller-identity
 ```
-
-![Terraform Installation](images/terraform-install.png)
 
 <img width="1896" height="510" alt="image" src="https://github.com/user-attachments/assets/cdc5b22b-8652-4cb6-b48d-c22b1719c289" />
 
