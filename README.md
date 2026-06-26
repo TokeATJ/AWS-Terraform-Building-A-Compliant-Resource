@@ -32,9 +32,9 @@ The environment consists of:
 
 ## Environment Setup
 
-### Step 1 – Login to AWS Sandbox Environment &
+### Step 1 – Login to AWS Sandbox Environment & Verified Terraform download version
 
-Terraform was installed and verified through PowerShell.
+Terraform was installed and verified through PowerShell. I also logged into my AWS sandbox
 
 ```powershell
 winget install Hashicorp.Terraform
@@ -44,10 +44,7 @@ aws sts get-caller-identity
 
 ![Terraform Installation](images/terraform-install.png)
 
-<img width="1498" height="682" alt="image" src="https://github.com/user-attachments/assets/5c59faef-58b1-429c-88b1-ac63e5b01ca1" />
-
-<img width="1896" height="510" alt="image" src="https://github.com/user-attachments/assets/64414d8b-5029-47d3-ad68-3fcb1ef73b97" />
-
+<img width="1896" height="510" alt="image" src="https://github.com/user-attachments/assets/cdc5b22b-8652-4cb6-b48d-c22b1719c289" />
 
 
 ### Step 2 – Navigate to Project Directory & Verify Contents
@@ -56,8 +53,7 @@ aws sts get-caller-identity
 cd C:\Users\<your-user>\Downloads\week-1
 dir
 ```
-
-<img width="1203" height="660" alt="image" src="https://github.com/user-attachments/assets/d1a77f30-8008-496e-a303-47652dd52001" />
+<img width="1203" height="660" alt="image" src="https://github.com/user-attachments/assets/c86c94a7-6561-49a1-9bce-5a51c9b0ba84" />
 
 ---
 
@@ -147,6 +143,7 @@ Prevent public exposure of bucket contents.
 ```terraform
 aws_s3_bucket_public_access_block
 ```
+<img width="741" height="1140" alt="image" src="https://github.com/user-attachments/assets/6fb8df8c-889b-4504-bef3-9cbc3fe07e60" />
 
 ### Implementation
 
@@ -174,7 +171,7 @@ resource "aws_s3_bucket_public_access_block" "log" {
 
 AWS treats these as four independent public access protections. All four must be enabled to fully block public access.
 
-![AC-3 Public Access Block](images/ac3-public-access.png)
+<img width="823" height="774" alt="image" src="https://github.com/user-attachments/assets/59eb8b96-e6a2-46ac-b037-d48d6de41001" />
 
 ---
 
@@ -189,6 +186,7 @@ Enable object versioning for recovery and auditability.
 ```terraform
 aws_s3_bucket_versioning
 ```
+<img width="981" height="1210" alt="image" src="https://github.com/user-attachments/assets/2a03d3ed-43cb-4f2c-9d7f-4eea0a37e360" />
 
 ### Implementation
 
@@ -211,7 +209,7 @@ resource "aws_s3_bucket_versioning" "primary" {
 - Audit support
 - Protection against accidental deletion
 
-![CM-6 Versioning](images/cm6-versioning.png)
+<img width="857" height="1154" alt="image" src="https://github.com/user-attachments/assets/a39098d1-b31b-452f-bc6c-a35d17fe090d" />
 
 ---
 
@@ -228,6 +226,7 @@ aws_s3_bucket_ownership_controls
 aws_s3_bucket_acl
 aws_s3_bucket_logging
 ```
+<img width="975" height="823" alt="image" src="https://github.com/user-attachments/assets/86c86203-efc8-4759-b4d7-e6e28a0028b8" />
 
 ### Implementation
 
@@ -263,7 +262,8 @@ resource "aws_s3_bucket_logging" "primary" {
 
 The log bucket must allow the S3 log delivery group to write logs. On modern AWS S3 configurations, object ownership must be set first, then the ACL, then bucket logging.
 
-![Audit Logging](images/audit-logging.png)
+<img width="746" height="961" alt="image" src="https://github.com/user-attachments/assets/b61b35fb-9119-4845-aec9-8b3f6edba7ec" />
+
 
 ---
 
@@ -282,7 +282,8 @@ Expected result:
 Success! The configuration is valid.
 ```
 
-![Terraform Validate](images/terraform-validate.png)
+<img width="975" height="420" alt="image" src="https://github.com/user-attachments/assets/8da96849-ac75-4c55-b55b-8b6708d6e7b0" />
+
 
 ---
 
@@ -318,7 +319,8 @@ AES256
 
 This output demonstrates that encryption at rest was successfully configured.
 
-![Outputs](images/outputs.png)
+<img width="797" height="652" alt="image" src="https://github.com/user-attachments/assets/cd51fb87-e0c1-4183-b5aa-4064f668a7d7" />
+
 
 ---
 
