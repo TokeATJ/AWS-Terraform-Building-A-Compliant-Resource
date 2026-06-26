@@ -321,6 +321,15 @@ This output demonstrates that encryption at rest was successfully configured.
 
 <img width="797" height="652" alt="image" src="https://github.com/user-attachments/assets/cd51fb87-e0c1-4183-b5aa-4064f668a7d7" />
 
+Additional evidence is available in:
+
+```text
+evidence/plan.json
+
+📄 **Evidence File:** [View plan.json](./evidence/plan.json)
+
+The evidence file contains the planned configuration demonstrating:
+
 
 ---
 
