@@ -1,5 +1,3 @@
-# AWS-Terraform-Building-A-Compliant-Resource
-This Terraform module enforces SC-28, AC-3, CM-6, and AU-3 on a cloud storage bucket and emits the proof as JSON.
 # AWS Terraform – Building a Compliant S3 Resource
 
 ## Project Overview
@@ -34,27 +32,32 @@ The environment consists of:
 
 ## Environment Setup
 
-### Step 1 – Install Terraform
+### Step 1 – Login to AWS Sandbox Environment &
 
 Terraform was installed and verified through PowerShell.
 
 ```powershell
+winget install Hashicorp.Terraform
 terraform version
 aws sts get-caller-identity
 ```
 
 ![Terraform Installation](images/terraform-install.png)
 
----
+<img width="1175" height="535" alt="image" src="https://github.com/user-attachments/assets/23b0d22c-75e9-482f-915e-ac1097783b30" />
 
-### Step 2 – Navigate to Project Directory
+<img width="1896" height="510" alt="image" src="https://github.com/user-attachments/assets/64414d8b-5029-47d3-ad68-3fcb1ef73b97" />
+
+
+
+### Step 2 – Navigate to Project Directory & Verify Contents
 
 ```powershell
 cd C:\Users\<your-user>\Downloads\week-1
 dir
 ```
 
-![Project Directory](images/project-directory.png)
+<img width="1203" height="660" alt="image" src="https://github.com/user-attachments/assets/d1a77f30-8008-496e-a303-47652dd52001" />
 
 ---
 
@@ -69,7 +72,8 @@ Terraform successfully downloaded the required providers:
 - `hashicorp/aws`
 - `hashicorp/random`
 
-![Terraform Init](images/terraform-init.png)
+<img width="1217" height="633" alt="image" src="https://github.com/user-attachments/assets/81ec5d73-29fc-49c4-bec9-6db7f67c535d" />
+
 
 ---
 
@@ -112,6 +116,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "log" {
   }
 }
 ```
+<img width="1070" height="522" alt="image" src="https://github.com/user-attachments/assets/47b67d09-2b2c-477d-81dc-a0cf25cebe1a" />
 
 ### Why AES256?
 
@@ -126,7 +131,8 @@ Examples include:
 - FedRAMP
 - Financial Services
 
-![SC-28 Encryption](images/sc28-encryption.png)
+<img width="1239" height="465" alt="image" src="https://github.com/user-attachments/assets/1e960e01-11e2-4cae-b98d-18e1eb004696" />
+
 
 ---
 
