@@ -322,12 +322,6 @@ This output demonstrates that encryption at rest was successfully configured.
 
 Additional evidence is available in:
 
-```text
-plan.json
-
-
-
-
 ---
 
 ## Lessons Learned
